@@ -1,0 +1,57 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1.2fr;
+    grid-template-rows: 4fr 0.4fr 1fr 2fr;
+    grid-template-areas: 
+        ". foto-p . foto-n ."
+        ". nombre-p . nombre-n ."
+        ". desc-p . desc-n ."
+        ". . . . .";
+    margin-top: 30px;
+}
+
+div.profesora{
+    grid-area: foto-p;
+    margin: 0 auto;
+    width: 50%;
+}
+
+div.nicolas{
+    grid-area: foto-n;
+    margin: 0 auto;
+    width: 50%%;
+}
+
+div.nombre_profe{
+    grid-area: nombre-p;
+    text-align: center;
+    align-self: flex-end;
+}
+
+div.nombre_nicolas{
+    grid-area: nombre-n;
+    text-align: center;
+    align-self: flex-end;   
+}
+
+div.descripcion_profe{
+    grid-area: desc-p;
+    text-align: center;
+    color: grey;
+    font-size: 15px;
+}
+
+div.descripcion_nico{
+    grid-area: desc-n;
+    text-align: center;
+    color: grey;
+    font-size: 15px;
+}
+
+footer{
+    grid-area: pie;
+}
+
+body{
+    background-color: lightgrey;
+}

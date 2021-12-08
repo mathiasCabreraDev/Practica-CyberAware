@@ -1,0 +1,16 @@
+import os
+
+os.system("pip3 install mysql-connector")
+os.system("pip3 install tweepy")
+os.system("pip3 install pandas")
+os.system("pip3 install numpy")
+os.system("pip3 install nltk")
+os.system("pip3 install scipy")
+os.system("pip3 install sklearn")
+os.system("pip3 install networkx")
+os.system("pip3 install unicodedata")
+os.system("pip3 install re")
+os.system("pip3 install flask")
+os.system("pip3 install flask-restful")
+os.system("pip3 install shutil")
+os.system("pip3 install keplergl")

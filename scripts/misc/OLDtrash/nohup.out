@@ -1,0 +1,2110 @@
+ * Serving Flask app "Servicio" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 603-237-931
+127.0.0.1 - - [28/Feb/2020 17:29:26] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Feb/2020 17:39:27] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Feb/2020 17:39:33] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Feb/2020 17:40:07] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Feb/2020 17:40:12] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Feb/2020 17:40:18] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Feb/2020 17:40:22] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Feb/2020 17:40:28] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Feb/2020 18:01:40] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Feb/2020 18:01:52] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+440
+440
+11
+440
+440
+11
+436
+436
+47
+436
+436
+47
+436
+436
+47
+426
+426
+None
+436
+436
+29
+440
+440
+11
+440
+440
+11
+440
+440
+11
+ * Serving Flask app "Servicio" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 339-173-873
+127.0.0.1 - - [28/Feb/2020 18:37:58] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Feb/2020 21:12:58] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Feb/2020 21:13:47] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Mar/2020 15:55:33] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Mar/2020 03:55:23] "[35m[1mGET /mapa/1231953928197152770 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:24] "[35m[1mGET /mapa/1231954943851950082 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:24] "[35m[1mGET /mapa/1231955452671315968 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:24] "[35m[1mGET /mapa/1231957014647070720 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:25] "[35m[1mGET /mapa/1231957223854792705 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:25] "[35m[1mGET /mapa/1231957346802208768 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:25] "[35m[1mGET /mapa/1231965794843664390 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:25] "[35m[1mGET /mapa/1231966635386396672 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:28] "[35m[1mGET /mapa/1231949899668701191 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:28] "[35m[1mGET /mapa/1231949914789359617 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:28] "[35m[1mGET /mapa/1231950479753699328 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:28] "[35m[1mGET /mapa/1231951307860258817 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:29] "[35m[1mGET /mapa/1231951445316034562 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:29] "[35m[1mGET /mapa/1231952196243247104 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:29] "[35m[1mGET /mapa/1231952793382027267 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:30] "[35m[1mGET /mapa/1231953569202356224 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:30] "[35m[1mGET /mapa/1231953660571213827 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 03:55:30] "[35m[1mGET /mapa/1231953865324552197 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 18:08:50] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Mar/2020 18:10:51] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Mar/2020 18:13:29] "[35m[1mGET /mapa/1231953660571213827 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [04/Mar/2020 18:15:16] "[37mPOST /busqueda HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Mar/2020 14:08:11] "[35m[1mGET /mapa/1231949472176975875 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:45] "[35m[1mGET /mapa/1231953928197152770 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:45] "[35m[1mGET /mapa/1231954943851950082 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:45] "[35m[1mGET /mapa/1231955452671315968 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:46] "[35m[1mGET /mapa/1231957014647070720 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:47] "[35m[1mGET /mapa/1231957223854792705 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:48] "[35m[1mGET /mapa/1231957346802208768 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:48] "[35m[1mGET /mapa/1231965794843664390 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:49] "[35m[1mGET /mapa/1231966635386396672 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:50] "[35m[1mGET /mapa/1231949899668701191 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:50] "[35m[1mGET /mapa/1231949914789359617 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:51] "[35m[1mGET /mapa/1231950479753699328 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:51] "[35m[1mGET /mapa/1231951307860258817 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:51] "[35m[1mGET /mapa/1231951445316034562 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:52] "[35m[1mGET /mapa/1231952196243247104 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:52] "[35m[1mGET /mapa/1231952793382027267 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:52] "[35m[1mGET /mapa/1231953569202356224 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:53] "[35m[1mGET /mapa/1231953660571213827 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [18/Mar/2020 04:01:53] "[35m[1mGET /mapa/1231953865324552197 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:07] "[35m[1mGET /mapa/1231953928197152770 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:08] "[35m[1mGET /mapa/1231954943851950082 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:08] "[35m[1mGET /mapa/1231955452671315968 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:08] "[35m[1mGET /mapa/1231957014647070720 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:08] "[35m[1mGET /mapa/1231957223854792705 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:09] "[35m[1mGET /mapa/1231957346802208768 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:10] "[35m[1mGET /mapa/1231965794843664390 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:10] "[35m[1mGET /mapa/1231966635386396672 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:12] "[35m[1mGET /mapa/1231949899668701191 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:12] "[35m[1mGET /mapa/1231949914789359617 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:12] "[35m[1mGET /mapa/1231950479753699328 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:13] "[35m[1mGET /mapa/1231951307860258817 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:13] "[35m[1mGET /mapa/1231951445316034562 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:13] "[35m[1mGET /mapa/1231952196243247104 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:14] "[35m[1mGET /mapa/1231952793382027267 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:14] "[35m[1mGET /mapa/1231953569202356224 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:14] "[35m[1mGET /mapa/1231953660571213827 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 272, in error_router
+    return original_handler(e)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/_compat.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 468, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 583, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/var/www/html/scripts/Servicio.py", line 135, in get
+    shutil.copyfile('mapa.html', '/var/www/html/cyberaware/back/tweets/generar/mapa.html')
+  File "/home/ubuntu/miniconda3/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: 'mapa.html'
+127.0.0.1 - - [01/Apr/2020 06:03:14] "[35m[1mGET /mapa/1231953865324552197 HTTP/1.1[0m" 500 -
+ * Serving Flask app "Servicio" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 682-296-454

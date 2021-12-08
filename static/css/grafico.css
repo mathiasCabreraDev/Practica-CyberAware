@@ -1,0 +1,12 @@
+.container-grafico{
+    display: grid;
+    grid-template-columns: 3% 94% 3%;
+    grid-template-rows: 350px;
+    grid-template-areas: ". grafico .";
+    margin: 15px 0px;
+}
+
+.grafico{
+    grid-area: grafico;
+}
+

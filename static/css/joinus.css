@@ -1,0 +1,42 @@
+.valign {
+
+	height: 100%;
+	width: 0px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.venter {
+
+	width: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+/* General rules */
+html, body {
+
+	font-family: "Open Sans", sans-serif;
+	color: #999999;
+}
+
+.full-height {
+
+	height: 100vh;
+}
+
+#home h1, #home p {
+
+	color: #fff;
+}
+
+.bonito {
+
+	background-color: #9683f9;
+	background-image: url(../assets/network.png);
+	background-size: 60% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}

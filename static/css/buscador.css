@@ -1,0 +1,15 @@
+.formulario{
+    display: grid;
+    grid-template-columns: 15% 60% 10% 15%;
+    grid-template-areas: ". texto boton .";
+    margin-bottom: .7rem;
+}
+
+.form-control{
+    grid-area: texto;
+}
+
+.btn{
+    margin-left: .7rem;
+    grid-area: boton;
+}

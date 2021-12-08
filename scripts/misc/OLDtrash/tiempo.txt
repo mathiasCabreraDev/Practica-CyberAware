@@ -1,0 +1,10 @@
+Archivo = HH:MM:SS
+
+limpiarTweets = 00:00:06
+stemTweets = 00:00:06
+weight = 00:07:26
+k_cpm = 00:00:47
+Insertar_Tweets_Limpios = 00:02:21
+Insertar_DB = 00:59:24
+Insertar_RT = 00:50:14
+
